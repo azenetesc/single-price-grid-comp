@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+.container {
+  max-width: 85%;
+  margin: 4em auto;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  padding: 1.6em;
+}
+
+.main-card {
+  background-color: rgba(255, 255, 255, 0.945);
+}
+
+.main-card .card-title {
+  color: #2ab2af;
+  font-size: 2rem;
+  margin-bottom: 1.2em;
+}
+
+.main-card .card-subtitle {
+  color: #c0df34;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.main-card .main-text {
+  color: #98a6bd;
+  font-size: 1.4rem;
+  line-height: 22px;
+  margin-bottom: 1em;
+}
+
+h3 {
+  color: #e5eff5;
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+
+.monthly-card {
+  background-color: #2ab2af;
+}
+
+.monthly-card .monthly-card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.monthly-card .monthly-card-price .price {
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 0.4em;
+}
+
+.monthly-card .monthly-card-price .monthly {
+  color: rgba(229, 239, 245, 0.719);
+}
+
+.monthly-card .monthly-card-text {
+  color: #e5eff5;
+  margin-bottom: 1.5em;
+  font-size: 1.55rem;
+}
+
+.monthly-card .btn {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 0.8em;
+  border-radius: 6px;
+  background-color: #c0df34;
+  color: #e5eff5;
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info-card {
+  background-color: #4bbebc;
+}
+
+.info-card .info-list {
+  list-style: none;
+  color: rgba(229, 239, 245, 0.719);
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    max-width: 600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    padding: 2em;
+  }
+  .main-card {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .main-card .card-title {
+    font-size: 2.2rem;
+  }
+  .main-card .card-subtitle {
+    font-size: 1.7rem;
+  }
+  .main-card .main-text {
+    max-width: 500px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
